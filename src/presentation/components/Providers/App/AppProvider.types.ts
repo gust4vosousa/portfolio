@@ -1,3 +1,5 @@
+import { JSX } from 'react'
+
 export interface IAppProps {
-  children: React.ReactNode
+  children: JSX.Element
 }

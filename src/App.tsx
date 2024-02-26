@@ -1,6 +1,8 @@
+import React from 'react'
 import { RouterProvider } from 'react-router-dom'
-import { router } from './application/routes/Routes'
-import { AppProvider } from './presentation/components/Providers/App/AppProvider'
+
+import { router } from '@/application/routes/Routes'
+import { AppProvider } from '@/presentation/components/Providers/App/AppProvider'
 
 export const App: React.FC = () => {
   return (

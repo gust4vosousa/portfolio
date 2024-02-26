@@ -1,3 +1,5 @@
+import { JSX } from 'react'
+
 export interface IScreenProps {
-  children: React.ReactNode
+  children: JSX.Element
 }

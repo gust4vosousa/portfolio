@@ -1,5 +1,6 @@
 import { RouteObject, createBrowserRouter } from 'react-router-dom'
-import { makeHomeScreenFactory } from '../factories/screens/Home/HomeScreenFactory'
+
+import { makeHomeScreenFactory } from '@/application/factories/screens/Home/HomeScreenFactory'
 
 const appRoutes: RouteObject[] = [
   {
