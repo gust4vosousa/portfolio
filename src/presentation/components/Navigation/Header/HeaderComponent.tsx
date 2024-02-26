@@ -1,11 +1,18 @@
 import React from 'react'
 
-import { AppBar, Toolbar } from '@mui/material'
+import { useColorModeContext } from '@/application/contexts/ColorMode/ColorModeContext'
+import { useHeaderComponentStyles } from '@/presentation/components/Navigation/Header/HeaderComponent.styles'
+import { AppBar, Button, Toolbar } from '@mui/material'
 
 export const HeaderComponent: React.FC = () => {
+  const { toggleColorMode } = useColorModeContext()
+  const classes = useHeaderComponentStyles()
+
   return (
-    <AppBar position="static">
-      <Toolbar>{"Gustavo's Portfolio"}</Toolbar>
+    <AppBar enableColorOnDark position="static">
+      <Toolbar className={classes.container}>
+        {"Gustavo's Portfolio"} <Button onClick={toggleColorMode}>Color</Button>
+      </Toolbar>
     </AppBar>
   )
 }
